@@ -1,6 +1,6 @@
 /*jslint node: true */
 var sqlite3 = require('sqlite3');
-var util = require('util-enhanced');
+var util = require('util');
 var BaseConnection = require('sqlcmd/connection');
 
 /** new Connection({filename: string, mode: <sqlite3_flags>})
