@@ -19,7 +19,7 @@
   "license": "MIT",
   "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",
   "dependencies": {
-    "sqlcmd": "~1.0.4",
+    "sqlcmd": "~1.0.5",
     "sqlite3": "*"
   },
   "devDependencies": {
