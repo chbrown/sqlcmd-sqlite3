@@ -13,12 +13,16 @@ function Connection(options) {
 }
 util.inherits(Connection, BaseConnection);
 
-/** Run plain SQL query on configured SQL connection.
+/** Connection#executeSQL(sql: string,
+                          args: any[] | {[index: string]: any},
+                          callback: (error: Error, rows: object[]))
 
+Execute a plain SQL query, potentially with prepared parameters, against this
+sqlcmd-sqlite3.Connection.
 */
-Connection.prototype.executeSQL = function(sql, callback) {
+Connection.prototype.executeSQL = function(sql, args, callback) {
   this.emit('log', {level: 'info', format: 'Executing SQL "%s"', args: [sql]});
-  this.database.all(sql, callback);
+  this.database.all(sql, args, callback);
 };
 
 Connection.prototype.executeCommand = function(command, callback) {
