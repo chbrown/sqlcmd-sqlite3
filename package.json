@@ -10,22 +10,25 @@
   "homepage": "https://github.com/chbrown/sqlcmd-sqlite3",
   "repository": {
     "type": "git",
-    "url": "git://github.com/chbrown/sqlcmd-sqlite3.git"
+    "url": "https://github.com/chbrown/sqlcmd-sqlite3.git"
   },
   "bugs": {
     "email": "Christopher Brown <io@henrian.com>",
-    "url": "http://github.com/chbrown/sqlcmd-sqlite3/issues"
+    "url": "https://github.com/chbrown/sqlcmd-sqlite3/issues"
   },
   "license": "MIT",
   "author": "Christopher Brown <io@henrian.com> (http://henrian.com)",
   "dependencies": {
-    "sqlcmd": "~1.0.5",
+    "sqlcmd": "2.1.1",
     "sqlite3": "*"
   },
   "devDependencies": {
-    "mocha": "*"
+    "babel-core": "^5.0.0",
+    "declarations": "*",
+    "mocha": "*",
+    "typescript": "*"
   },
   "scripts": {
-    "test": "mocha test"
+    "test": "make test"
   }
 }
