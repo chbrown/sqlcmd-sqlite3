@@ -1,9 +1,9 @@
-import assert from 'assert';
-import {describe, it, before, after} from 'mocha';
+import * as assert from 'assert';
+import 'mocha';
 
 import {Connection} from '..';
 
-var db = new Connection({filename: 'sqlcmd_database.sqlite'});
+const db = new Connection({filename: 'sqlcmd_database.sqlite'});
 
 import {setup, teardown} from './examples/persons';
 
