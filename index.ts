@@ -23,13 +23,13 @@ export class Connection extends BaseConnection {
   */
   executeSQL(sql: string,
              args: any[] | {[index: string]: any},
-             callback: (error: Error, rows?: any[]) => void) {
+             callback: (error: Error, rows?: any[]) => void): void {
     this.emit('log', {level: 'info', format: 'Executing SQL "%s"', args: [sql]});
     this.database.all(sql, args, callback);
   }
 
   executeCommand<R>(command: Command<R>,
-                    callback: (error: Error, result?: R) => void) {
+                    callback: (error: Error, result?: R) => void): void {
     // sqlite3 is cool with getting some SQL with $variables and then an object
     // mapping out those parameters, but it wants the object keys to be $-prefixed,
     // like the variable references.
