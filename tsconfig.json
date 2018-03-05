@@ -1,5 +1,11 @@
 {
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES6"
+  },
   "files": [
+    "tests/query.ts",
+    "tests/examples/persons.ts",
     "index.ts"
   ]
 }
