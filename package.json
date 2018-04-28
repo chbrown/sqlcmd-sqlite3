@@ -1,6 +1,6 @@
 {
   "name": "sqlcmd-sqlite3",
-  "version": "3.0.1",
+  "version": "4.0.0",
   "description": "sqlcmd for SQLite",
   "keywords": [
     "sqlcmd",
